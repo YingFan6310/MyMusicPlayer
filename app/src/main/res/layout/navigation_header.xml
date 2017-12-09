@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimaryDark"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:id="@+id/ll_icon"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:visibility="visible">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="60dp"
+            android:src="@drawable/nav_icon"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/username"
+            android:layout_marginStart="29dp" />
+
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/username"
+            android:text="Billy Fan"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="billyfan@gmail.com"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</FrameLayout>
